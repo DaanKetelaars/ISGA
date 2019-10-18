@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  font: 100%/1.618 sans-serif;
 }
 
 h1, h2, p, a, ul, li {
@@ -26,8 +27,7 @@ h1, h2, p, a, ul, li {
 }
 
 p {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 16px;
 }
 
 a {
@@ -79,14 +79,14 @@ header h1 {
 
 header p {
   font-family: 'Avenir';
-  font-size: 12px;
-  color: #AAAAAA;
+  font-size: 16px;
+  color: #999;
   letter-spacing: 0;
   text-align: center;
-  line-height: 20px;
   margin-top: 2.5em;
   height: auto;
-  width: 80%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 header img {
@@ -100,7 +100,7 @@ header .btn {
   background: #E30613;
   border-radius: 5px;
   font-family: 'SourceSansPro-Bold';
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 1.25em 3em;
   margin-top: 2em;
@@ -111,15 +111,23 @@ header .btn {
   flex-direction: column;
 }
 
-a.back-btn {
-  display: flex;
+.top-navbar {
   width: 100%;
-  margin-top: 1em;
-  margin-left: 2em;
-  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a.back-btn {
   color: #000;
   font-family: 'SourceSansPro-Regular';
-  font-size: 15px;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-right: auto;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
 }
 
 a.back-btn img {
@@ -129,17 +137,32 @@ a.back-btn img {
   margin-top: 0px;
 }
 
+a.home-btn {
+  color: #000;
+  font-family: 'SourceSansPro-Regular';
+  font-size: 16px;
+  margin-left: 0;
+  margin-right: 30px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+a.home-btn img {
+  width: 4vw;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-top: 5em; */
 }
 
-.cards-home {
-  margin-top: 1.5em;
-}
 
 .card {
   border-radius: 5px;
@@ -183,7 +206,7 @@ a.back-btn img {
 footer {
   padding: 1em;
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   z-index: 1;
@@ -192,7 +215,7 @@ footer {
 
 footer p {
   font-family: 'SourceSansPro-Regular';
-  font-size: 12px;
+  font-size: 16px;
   color: #444444;
 }
 
@@ -224,16 +247,18 @@ footer p {
 
 .season-card p strong {
   font-family: 'SourceSansPro-SemiBold';
-  font-size: 12px;
+  font-size: 16px;
   color: #000000;
   text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .season-card a.btn {
   background: #E30613;
   border-radius: 5px;
   font-family: 'SourceSansPro-Bold';
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 1.25em 3em;
   margin-top: 2em;
@@ -276,7 +301,7 @@ footer p {
   border-radius: 5px;
   padding: 1em;
   width: 325px;
-  height: 175px;
+  height: 200px;
   margin-bottom: 2em;
   display: flex;
   justify-content: center;
@@ -301,17 +326,18 @@ footer p {
 
 .tip-card p {
   font-family: 'Avenir';
-  font-size: 12px;
-  color: #AAAAAA;
+  font-size: 14px;
+  color: #999;
   letter-spacing: 0;
   text-align: center;
-  line-height: 20px;
   margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .tip-card strong {
   font-family: 'SourceSansPro-SemiBold';
-  font-size: 12px;
+  font-size: 16px;
   color: #E30613;
   text-align: center;
 }
@@ -320,7 +346,7 @@ footer p {
   border-radius: 5px;
   padding: 1em;
   width: 325px;
-  height: 175px;
+  height: 200px;
   margin-bottom: 2em;
   display: flex;
   justify-content: center;
@@ -345,12 +371,13 @@ footer p {
 
 .app-card p {
   font-family: 'Avenir';
-  font-size: 12px;
-  color: #AAAAAA;
+  font-size: 14px;
+  color: #999;
   letter-spacing: 0;
   text-align: center;
-  line-height: 20px;
   margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .app-card .btn-container {
@@ -370,7 +397,7 @@ footer p {
   border: 1px solid #E30613;
   border-radius: 5px;
   font-family: 'SourceSansPro-Bold';
-  font-size: 12px;
+  font-size: 16px;
   color: #E30613;
   text-align: center;
 }
@@ -410,7 +437,7 @@ form div {
 
 form label {
   font-family: 'SourceSansPro-SemiBold';
-  font-size: 14px;
+  font-size: 16px;
   color: #000000;
   text-align: left;
 }
@@ -421,10 +448,9 @@ form input {
   padding: .5em;
   margin-top: .5em;
   font-family: 'Avenir';
-  font-size: 12px;
-  color: #AAAAAA;
+  font-size: 16px;
+  color: #999;
   text-align: left;
-  line-height: 20px;
 }
 
 form textarea {
@@ -433,10 +459,9 @@ form textarea {
   padding: .5em;
   margin-top: .5em;
   font-family: 'Avenir';
-  font-size: 12px;
-  color: #AAAAAA;
+  font-size: 16px;
+  color: #999;
   text-align: left;
-  line-height: 20px;
 }
 
 form select {
@@ -446,10 +471,9 @@ form select {
   padding: .5em;
   margin-top: .5em;
   font-family: 'Avenir';
-  font-size: 12px;
-  color: #AAAAAA;
+  font-size: 16px;
+  color: #999;
   text-align: left;
-  line-height: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -461,7 +485,7 @@ form select {
   border: none;
   border-radius: 5px;
   font-family: 'SourceSansPro-Bold';
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 1.25em 3em;
   color: #FFFFFF;
