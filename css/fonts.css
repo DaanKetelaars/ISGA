@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url('../assets/fonts/eot/SourceSansPro-Regular.eot');
+  src: url('../assets/fonts/eot/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff/SourceSansPro-Regular.woff') format('woff'),
+    url('../assets/fonts/ttf/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-SemiBold';
+  src: url('../assets/fonts/eot/SourceSansPro-SemiBold.eot');
+  src: url('../assets/fonts/eot/SourceSansPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff/SourceSansPro-SemiBold.woff') format('woff'),
+    url('../assets/fonts/ttf/SourceSansPro-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url('../assets/fonts/eot/SourceSansPro-Bold.eot');
+  src: url('../assets/fonts/eot/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff/SourceSansPro-Bold.woff') format('woff'),
+    url('../assets/fonts/ttf/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/eot/Avenir-Book.eot');
+  src: url('../assets/fonts/eot/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/woff/Avenir-Book.woff') format('woff'),
+    url('../assets/fonts/ttf/Avenir-Book.ttf') format('truetype');
+}

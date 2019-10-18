@@ -1,0 +1,572 @@
+/* BASICS / RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SourceSansPro-Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #333;
+  color: #000;
+  margin: 0 auto;
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+h1, h2, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BASICS / RESET END */
+
+
+/* MAIN */
+section {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #000 0%, #000 50%, #fff 50%, #fff 100%);
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3em;
+}
+
+section#home {
+  justify-content: stretch;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+header h1 {
+  font-family: 'SourceSansPro-Bold';
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 3em;
+}
+
+header p {
+  font-family: 'Avenir';
+  font-size: 12px;
+  color: #AAAAAA;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 2.5em;
+  height: auto;
+  width: 80%;
+}
+
+header img {
+  width: 4vw;
+  transform: rotate(90deg);
+  margin-top: 2em;
+  margin-bottom: -2em;
+}
+
+header .btn {
+  background: #E30613;
+  border-radius: 5px;
+  font-family: 'SourceSansPro-Bold';
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 1.25em 3em;
+  margin-top: 2em;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a.back-btn {
+  display: flex;
+  width: 100%;
+  margin-top: 1em;
+  margin-left: 2em;
+  justify-content: flex-start;
+  color: #000;
+  font-family: 'SourceSansPro-Regular';
+  font-size: 15px;
+}
+
+a.back-btn img {
+  width: 4vw;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 5em; */
+}
+
+.cards-home {
+  margin-top: 1.5em;
+}
+
+.card {
+  border-radius: 5px;
+  padding: 1em;
+  width: 260px;
+  height: 100px;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-animation: fadeinUp .5s linear;
+  animation: fadeinUp .5s linear;
+}
+
+.card h2 {
+  font-family: 'SourceSansPro-Bold';
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.card-heading-tips {
+  color: #fff;
+}
+
+.card-heading-apps {
+  color: #000;
+}
+
+.card:nth-child(1) {
+  background: #E30613;
+  box-shadow: 0 2px 50px 0 rgba(227, 6, 19, 0.45);
+}
+
+.card:nth-child(2) {
+  background: #fff;
+  box-shadow: 0 2px 50px 0 rgba(255, 255, 255, 0.45);
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background: #000;
+}
+
+footer p {
+  font-family: 'SourceSansPro-Regular';
+  font-size: 12px;
+  color: #444444;
+}
+
+.season-card {
+  border-radius: 5px;
+  padding: 1em;
+  width: 325px;
+  height: 175px;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.20);
+  -webkit-animation: fadeinUp .5s linear;
+  animation: fadeinUp .5s linear;
+}
+
+.season-card h2 {
+  font-family: 'SourceSansPro-Bold';
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+.season-card p strong {
+  font-family: 'SourceSansPro-SemiBold';
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+}
+
+.season-card a.btn {
+  background: #E30613;
+  border-radius: 5px;
+  font-family: 'SourceSansPro-Bold';
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 1.25em 3em;
+  margin-top: 2em;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.season-card:nth-child(1) {
+  background-image: url(../assets/svg/cloud.svg);
+  background-repeat: no-repeat;
+  background-position: 120% 120%;
+  background-size: 45%;
+}
+
+.season-card:nth-child(2) {
+  background-image: url(../assets/svg/sun.svg);
+  background-repeat: no-repeat;
+  background-position: -25% -120%;
+  background-size: 40%;
+}
+
+.season-card:nth-child(3) {
+  background-image: url(../assets/svg/rain.svg);
+  background-repeat: no-repeat;
+  background-position: 120% -120%;
+  background-size: 45%;
+}
+
+.season-card:nth-child(4) {
+  background-image: url(../assets/svg/snow.svg);
+  background-repeat: no-repeat;
+  background-position: -25% -120%;
+  background-size: 45%;
+}
+
+.tip-card {
+  border-radius: 5px;
+  padding: 1em;
+  width: 325px;
+  height: 175px;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.20);
+  -webkit-animation: fadeinUp .5s linear;
+  animation: fadeinUp .5s linear;
+}
+
+.tip-card h2 {
+  font-family: 'SourceSansPro-Bold';
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+  margin-top: 1em;
+}
+
+.tip-card p {
+  font-family: 'Avenir';
+  font-size: 12px;
+  color: #AAAAAA;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 1em;
+}
+
+.tip-card strong {
+  font-family: 'SourceSansPro-SemiBold';
+  font-size: 12px;
+  color: #E30613;
+  text-align: center;
+}
+
+.app-card {
+  border-radius: 5px;
+  padding: 1em;
+  width: 325px;
+  height: 175px;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.20);
+  -webkit-animation: fadeinUp .5s linear;
+  animation: fadeinUp .5s linear;
+}
+
+.app-card h2 {
+  font-family: 'SourceSansPro-Bold';
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+.app-card p {
+  font-family: 'Avenir';
+  font-size: 12px;
+  color: #AAAAAA;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 1em;
+}
+
+.app-card .btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-second {
+  padding: 1em;
+  width: 120px;
+  height: 35px;
+  margin: .5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #E30613;
+  border-radius: 5px;
+  font-family: 'SourceSansPro-Bold';
+  font-size: 12px;
+  color: #E30613;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -.5em;
+  border-radius: 5px;
+  padding: 1em;
+  width: 325px;
+  height: auto;
+  margin-bottom: 2em;
+  background-color: #fff;
+  box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.20);
+  -webkit-animation: fadeinUp .5s linear;
+  animation: fadeinUp .5s linear;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .25em;
+  margin-top: .25em;
+}
+
+form label {
+  font-family: 'SourceSansPro-SemiBold';
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+form input {
+  border: 1px solid #E30613;
+  border-radius: 5px;
+  padding: .5em;
+  margin-top: .5em;
+  font-family: 'Avenir';
+  font-size: 12px;
+  color: #AAAAAA;
+  text-align: left;
+  line-height: 20px;
+}
+
+form textarea {
+  border: 1px solid #E30613;
+  border-radius: 5px;
+  padding: .5em;
+  margin-top: .5em;
+  font-family: 'Avenir';
+  font-size: 12px;
+  color: #AAAAAA;
+  text-align: left;
+  line-height: 20px;
+}
+
+form select {
+  border: 1px solid #E30613;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: .5em;
+  margin-top: .5em;
+  font-family: 'Avenir';
+  font-size: 12px;
+  color: #AAAAAA;
+  text-align: left;
+  line-height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../assets/svg/arrow-down.svg) 95% / 5% no-repeat;
+}
+
+.send-btn button {
+  background: #E30613;
+  border: none;
+  border-radius: 5px;
+  font-family: 'SourceSansPro-Bold';
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 1.25em 3em;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox label {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: .2em;
+}
+
+/* MAIN END */
+
+
+/* FADEIN EFFECTS */
+
+
+/* Fadein */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* FadeinUp */
+@-webkit-keyframes fadeinUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeinUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* FadeinLeft */
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+/* FADEIN EFFECTS END */

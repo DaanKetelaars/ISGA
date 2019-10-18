@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!--- meta --->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ISGA</title>
+
+	<!--- CSS --->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+
+</head>
+
+<!--- content --->
+
+<body>
+
+	<section>
+		<a href="tips.html" class="back-btn"><img src="assets/svg/back.svg" alt="">back</a>
+		<header>
+			<h1>Tip insturen?</h1>
+			<p>Heb jij een mooie of handige weer tip? Stuur deze dan in en wij voegen hem toe!</p>
+		</header>
+
+		<div class="form">
+			<form action="" method="post">
+				<div>
+					<label for="name">Naam:</label>
+					<input type="text" id="name" name="user_name" placeholder="vul hier je volledige naam in" />
+				</div>
+				<div>
+					<label for="mail">E-mail:</label>
+					<input type="email" id="mail" name="user_email" placeholder="vul hier je e-mail in" />
+				</div>
+				<div>
+					<label for="mail">Student:</label>
+				</div>
+				<div class="checkbox">
+					<input type="radio" name="answer">
+					<label for="ja">Ja</label>
+					<input type="radio" name="answer">
+					<label for="nee">Nee</label>
+				</div>
+				<div>
+					<label for="seizoen">Seizoen:</label>
+					<select>
+						<option value="lente">Lente</option>
+						<option value="zomer">Zomer</option>
+						<option value="herfst">Herfst</option>
+						<option value="winter">Winter</option>
+					</select>
+				</div>
+				<div>
+					<label for="msg">Tip invullen:</label>
+					<textarea id="msg" name="user_message" placeholder="vul hier je tip in"></textarea>
+				</div>
+
+				<div class="send-btn">
+					<button type="submit">Send your message</button>
+				</div>
+			</form>
+	</section>
+
+	<footer>
+		<p>copyright ISGA</p>
+	</footer>
+</body>
+
+</html>
