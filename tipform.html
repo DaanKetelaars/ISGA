@@ -29,23 +29,24 @@
 		</header>
 
 		<div class="form">
-			<form>
+			<form action="success.html">
 				<div>
 					<label for="name">Name:</label>
-					<input type="text" id="name" name="user_name" placeholder="fill in your full name" />
+					<input type="text" id="name" name="user_name" placeholder="fill in your full name" required />
 				</div>
 				<div>
 					<label for="mail">Student:</label>
 				</div>
 				<div class="checkbox">
-					<input type="radio" name="answer">
+					<input type="radio" name="answer" required>
 					<label for="ja">Yes</label>
-					<input type="radio" name="answer">
+					<input type="radio" name="answer" required>
 					<label for="nee">No</label>
 				</div>
 				<div>
 					<label for="seizoen">For which season:</label>
-					<select>
+					<select required>
+						<option value="">None</option>
 						<option value="lente">Spring</option>
 						<option value="zomer">Summer</option>
 						<option value="herfst">Autumn</option>
@@ -54,13 +55,14 @@
 				</div>
 				<div>
 					<label for="msg">Enter your tip:</label>
-					<textarea id="msg" name="user_message" placeholder="Enter your personal tip"></textarea>
+					<textarea id="msg" name="user_message" placeholder="Enter your personal tip" required></textarea>
 				</div>
 
 				<div class="send-btn">
 					<button type="submit">Send tip</button>
 				</div>
 			</form>
+		</div>
 	</section>
 
 	<footer>

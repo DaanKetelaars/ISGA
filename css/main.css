@@ -52,6 +52,14 @@ section {
   padding-bottom: 3em;
 }
 
+section#success {
+  height: 100vh;
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+
 section#home {
   justify-content: stretch;
   display: flex;
@@ -76,6 +84,7 @@ header h1 {
   text-align: center;
   margin-top: 3em;
 }
+
 
 header p {
   font-family: 'Avenir';
@@ -506,6 +515,34 @@ form select {
   margin-left: 1em;
   margin-right: 1em;
   margin-top: .2em;
+}
+
+.popup {
+  background:#fff;
+  padding: 3em;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.9);
+}
+
+.popup header h1 {
+  margin-top:1em;
+}
+.popup header p {
+  margin-bottom: 2em;
+}
+img.close-img {
+  width:4vw;
+  position: absolute;
+  right:30px;
+  top:30px;
 }
 
 /* MAIN END */
