@@ -3,30 +3,33 @@
 
 <head>
 
-	<!--- meta --->
+	<!-- meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ISGA</title>
 
-	<!--- CSS --->
+	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/fonts.css">
 
 </head>
 
-<!--- content --->
+<!-- content -->
 
 <body>
 
-	<section>
-		<div class="top-navbar">
-			<a href="tips.html" class="back-btn"><img src="assets/svg/back.svg" alt="back button">back</a>
-			<a href="index.html" class="home-btn">home<img src="assets/svg/home.svg" alt="home button"></a>
-		</div>
-		<header>
-			<h1>Send in your tip!</h1>
-			<p>Do you have a nice tip people should know about? Then fill out the form below and we will make sure to put your tip online!</p>
-		</header>
+	<nav>
+		<ul>
+			<li><a href="tips.html" class="back-btn"><img src="assets/svg/back.svg" alt="back button">back</a></li>
+			<li> <a href="index.html" class="home-btn">home<img src="assets/svg/home.svg" alt="home button"></a></li>
+		</ul>
+	</nav>
+
+	<header>
+		<h1>Send in your tip!</h1>
+		<p>Do you have a nice tip people should know about? Then fill out the form below and we will make sure to put your tip online!</p>
+	</header>
+
+	<main>
 
 		<div class="form">
 			<form action="success.html">
@@ -34,18 +37,15 @@
 					<label for="name">Name:</label>
 					<input type="text" id="name" name="user_name" placeholder="fill in your full name" required />
 				</div>
-				<div>
-					<label for="mail">Student:</label>
-				</div>
 				<div class="checkbox">
-					<input type="radio" name="answer" required>
-					<label for="ja">Yes</label>
-					<input type="radio" name="answer" required>
-					<label for="nee">No</label>
+					<input type="radio" name="answer" id="yes" required>
+					<label for="yes">Yes</label>
+					<input type="radio" name="answer" id="no" required>
+					<label for="no">No</label>
 				</div>
 				<div>
 					<label for="seizoen">For which season:</label>
-					<select required>
+					<select id="seizoen" required>
 						<option value="">None</option>
 						<option value="lente">Spring</option>
 						<option value="zomer">Summer</option>
@@ -63,11 +63,12 @@
 				</div>
 			</form>
 		</div>
-	</section>
+	</main>
 
 	<footer>
 		<p>copyright ISGA</p>
 	</footer>
+
 </body>
 
 </html>
