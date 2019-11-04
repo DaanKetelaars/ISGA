@@ -40,8 +40,8 @@
 
 body {
   font-family: 'SourceSansPro-Regular';
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to top, #000 0%, #000 50%, #fff 50%, #fff 100%);
   color: #000;
   margin: 0 auto;
@@ -51,7 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* font: 100%/1.618 sans-serif; */
+  font: 100%/1.618 sans-serif;
 }
 
 h1, h2, p, a, ul, li {
