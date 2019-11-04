@@ -383,6 +383,7 @@ footer p {
   font-size: 16px;
   color: #E30613;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 /* WEATHER APP CARDS */
@@ -431,6 +432,7 @@ footer p {
 .app-card .btn-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: .5em;
 }
 
 /* TIPS FORM */
