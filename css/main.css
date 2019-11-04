@@ -62,6 +62,7 @@ h1, h2, p, a, ul, li {
 
 p {
   font-size: 16px;
+  font-family: 'Avenir';
 }
 
 a {
@@ -542,6 +543,7 @@ form select {
   background: #fff;
   padding: 3em;
   max-width: 90%;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,6 +570,8 @@ img.close-img {
 }
 
 /* MAIN CONTENT END */
+
+
 /* FADEIN EFFECTS */
 /* Fadein */
 @-webkit-keyframes fadein {
